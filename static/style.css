@@ -1,0 +1,365 @@
+@import url('https://font.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: #f9f9f9;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav{
+    height: 20vh;
+    /* padding: 2vw 2vw; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100%;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    /* padding: 0vw 12vw; */
+}
+#nav-part2 h4{
+    padding: 10px 20px;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+#nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:#359381;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+#nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+#nav-part2 h4 a{
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+#nav-part2 h4:hover a{
+    color: #fff;
+}
+
+/* Search--- */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 17vw; */
+}
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-size: 18px;
+    justify-content: space-between;
+    gap: 10vw;
+}
+.search-button {
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#359381;
+    justify-content: space-between;
+}
+
+
+/* ParallaxEffect---  */
+
+#page1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+
+}
+
+#page1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#page2 {
+    position: relative;
+    background: #003329;
+  }
+  #page2 h2 {
+    font-size: 3em;
+    color: #fff;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    
+  }
+  /* Swiper --- */
+  
+  
+  .swiper {
+    width: 100%;
+    padding-top: 2em; /* changed to relative unit */
+    padding-bottom: 2em; /* changed to relative unit */
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  .swiper-slide h1 {
+    display: block;
+    text-align: center;
+    padding: 1em; /* changed to relative unit */
+    margin-top: .02em; /* changed to relative unit */
+    color: beige;
+  }
+
+ #page3 {
+    height: 100%;
+    width: 100%;
+    background-color: #003329;
+ }
+ #OthersSec{
+    width: 100%;
+    padding-bottom: 50px;
+    
+ }
+ #OthersSec h2{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 3em;
+    color: antiquewhite;
+    
+}
+
+
+/* Cards --  */
+
+    .card-container {
+      width: 1170px;
+      margin: auto;
+      padding-left: 5px;
+      padding-right: 5px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      display: flex;
+      padding-top: 50px;
+    }
+
+    .card {
+        height:375px;
+        flex-basis: 23%;
+        margin: 2px 0px;
+        text-align: center;
+        padding: 20px 0px;
+        border-radius: 10px;
+        box-shadow: 0PX  0PX 10PX 3px lightslategray;
+        overflow: hidden;
+        transition: transform 0.2s;
+       background-color: #F0F8FF;
+    }
+    .card h3{
+        padding: 10px 0px;
+    }
+    .card p{
+        padding: 10px;
+        font-size: clamp(0.5rem,0.3043rem + 3.4783vw, 1rem);
+        font-weight: 500;
+        text-align: center;
+    }
+    .card button{
+       background-color: blue;
+        padding: 10px 25px;
+        border: none;
+        color: white;
+        border-radius:10px ;
+       margin: 10px 0px;
+    }
+    .card img{
+         max-width: 80vh;
+         max-height: 35vh;
+         align-items: center;
+         
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        border: 3.5px solid black;
+    }
+
+/* Media queries for responsiveness */
+
+@media only screen and (min-width: 200px) and (max-width: 480px){
+  
+    nav{
+        display: none;
+    }
+    #page1{ 
+        height: 50vw;
+        width: 100%;
+        overflow: hidden;
+    }
+    #page1 img{
+       max-height: 100%;
+       width: 100%;
+    }
+    #text{
+        font-size: 40px;
+        font-weight: 800;
+        margin:auto;
+    }
+    #page2 h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    #page3 h2{
+        font-size: 28px;
+        font-weight: 900;
+        text-align: center;
+        
+    }
+
+       .card-container{
+        width: 375px;
+       height: 100%;
+       
+       }
+       .card{
+        flex-basis: 44%;
+        height: 275px;
+        margin: 10px 0px;
+       }
+       .card img{
+        max-width: 80%;
+        max-height: 35%;
+        align-items: center;
+        
+   }
+       .card p{
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 10px;
+    }
+        
+   }
+
+/* Tablet (max-width: 768px) */
+@media only screen and (min-width: 768px) {
+    nav {
+      margin-bottom: 50px;
+      max-height: 5vh;
+    }
+    #page1 {
+      height: 50vw;
+      width: 100%;
+      overflow: hidden;
+    }
+    #page1 img{
+        max-height: 100%;
+        width: 100%;
+     }
+    #text {
+      font-size: 5em;
+      font-weight: 800;
+      margin: auto;
+      padding-top: 107px;
+    }
+    .card-container {
+      width: 90%;
+      flex-direction: column;
+    }
+    .card {
+      margin: 10px;
+    }
+  }
+
+  /* Desktop (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+    nav {
+      margin-bottom: 0;
+      max-height: 10vh;
+      
+    }
+    #page1 {
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+    #text {
+      font-size: 5em;
+      font-weight: 600;
+      margin: auto;
+      padding-top: 50px;
+    }
+    .card-container {
+      width: 1170px;
+      flex-direction: row;
+    }
+    .card {
+      margin: 10px;
+    }
+    .card img{
+        max-width: 80%;
+        max-height: 35%;
+        align-items: center;
+        
+   }
+  }
+ 

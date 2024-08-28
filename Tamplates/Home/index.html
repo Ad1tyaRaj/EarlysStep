@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarlyStep</title>
+    <link
+rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    
+      <header>
+        <nav>
+            <div id="nav-part2">
+                <h4> <a href="#" >Home</a>
+                <h4> <a href="#">Contact</a></h4>
+                <h4><a href="#">Services</a></h4></h4>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-button">Search</button>
+                </div> 
+            </div>     
+        </nav>
+    </header>
+
+    <div id="page1">
+      <img id="hill1" src="{% static 'Images\hill1.png' %}" alt="hill1">
+        <img id="hill2" src="{% static 'Images\hill2.png' %}" alt="hill2">
+        <img id="hill3" src="{% static 'Images\hill3.png' %}" alt="hill3">
+        <img id="hill4" src="{% static 'Images\hill4.png' %}" alt="hill4">
+        <img id="hill5" src="{% static 'Images\hill5.png' %}" alt="hill5">
+        <img id="tree" src="{% static 'Images\tree.png' %}" alt="tree">
+        <h2 id="text">EarlySteps</h2>
+        <img id="leaf" src="{% static 'Images\leaf.png' %}" alt="leaf">
+        <img id="plant"src="{% static 'Images\plant.png' %}" alt="plant">
+    </div>
+
+    <div id="page2">
+      <h2>Suggested Steps :-</h2>
+
+      <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+              {% for i in Data %}
+            <div class="swiper-slide">
+
+             <a href="snake.html"><img src="/Media/{{i.stock_img}}" /></a>
+              <h1>{{i.title}}</h1>
+
+            </div>
+              {% endfor %}
+<!--            <div class="swiper-slide">-->
+<!--              <img src="/Media/{{i.stock_img}}" />-->
+<!--              <h1>{{i.title}}</h1>-->
+<!--            </div>-->
+<!--            <div class="swiper-slide">-->
+<!--              <img src="https://imgs.search.brave.com/4gL-l5oVH36_4FFEksif4uwWZMA7_872UkgMI82HgZI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjM5/MzI2NjM4L3Bob3Rv/L3BvaXNvbm91cy1p/bnNlY3Qtc2NvcnBp/b24tb24taGFuZC5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/ek1uN0pBaGJMWndp/WnltWWc0VUFSOUxn/b0JKOWtwb1dxREN2/WFJvYWZGYz0" />-->
+<!--              <h1>     Scorpion Bite</h1>-->
+<!--            </div>-->
+<!--            <div class="swiper-slide">-->
+<!--              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />-->
+<!--              <h1></h1>-->
+<!--            </div>-->
+<!--            <div class="swiper-slide">-->
+<!--              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />-->
+<!--              <h1></h1>-->
+<!--            </div>-->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+<div id="page3">
+
+       <div id="OthersSec">
+        <h2>Others</h2>
+            <!--Cards  -->
+
+            <div class="card-container">
+                        <!-- Card 1 -->
+
+              <div class="card">
+              
+                  <img  src="https://images.unsplash.com/photo-1715706107718-4a0cc4f0335c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="Card Image 1" width="375px" height="250px">
+                  <h3>Card Title 1</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, praesentium accusantium temporibus .</p>
+                  <a href= "#"><button>Read More</button></a>
+              </div>
+  
+                      <!--Card 2 -->
+  
+              <div class="card">
+                <img src="https://images.unsplash.com/photo-1716343168811-353d613d132a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
+                    <h3 >Card Title 2</h3>
+                    <p>Card description or content goes here.</p>
+                    <a href= "#"><button>Read More</button></a>
+            </div>
+            
+                     <!-- card 3 -->
+
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1676548363806-d3a57b200082?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
+              <h3>Card Title 3</h3>
+                <p>Card description or content goes here.</p>
+                <a href= "#"><button>Read More</button></a>
+          </div>
+
+                   <!-- card 4 -->
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1715619044226-b693312ffb9b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
+                <h3>Card Title 4</h3>
+                <p>Card description or content goes here.</p>
+                <a href= "#"><button>Read More</button></a>
+        </div>
+      
+                    <!-- card 5 -->
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1716062778683-35d5f505d6ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
+              <h3>Card Title 5</h3>
+              <p>Card description or content goes here.</p>
+              <a href= "#"><button>Read More</button></a>
+      </div>
+
+                    <!-- card 6 -->
+  
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1716094978972-f05cb5796185?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
+            <h3 class="card-title">Card Title 6</h3>
+            <p>Card description or content goes here.</p>
+            <a href= "#"><button>Read More</button></a>
+                    </div> 
+
+                    <!-- card 7 -->
+
+                    <div class="card">
+                      <img  src="https://images.unsplash.com/photo-1715706107718-4a0cc4f0335c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="Card Image 1" width="375px" height="250px">
+                      <h3>Card Title 7</h3>
+                      <p>Card description or content goes here.</p>
+                      <a href= "#"><button>Read More</button></a>
+                  </div>
+
+                    <!-- card 8 -->
+
+
+                    <div class="card">
+                      <img  src="https://images.unsplash.com/photo-1715706107718-4a0cc4f0335c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="Card Image 1" width="375px" height="250px">
+                      <h3>Card Title 8</h3>
+                      <p>Card description or content goes here.</p>
+                      <a href= "#"><button>Read More</button></a>
+                  </div>
+
+            </div>
+  
+       </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="{% static 'script.js' %}"></script>
+</body>
+</html>
