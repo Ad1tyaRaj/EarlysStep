@@ -1,4 +1,5 @@
-![Screenshot 2024-08-21 014942](https://github.com/user-attachments/assets/7a1acd20-5ee6-4224-a68a-defa8fe917be)
+![Screenshot 2024-08-21 014942](https://github.com/user-attachments/assets/546790fa-4d99-443a-b040-5316a514090d)
+
 
 EarlyStep is a web application built using Django, designed to provide users with assistance and remedies for various issues. Whether you're facing personal challenges or need guidance in specific areas, EarlyStep offers a platform to explore solutions tailored to your needs.
 
