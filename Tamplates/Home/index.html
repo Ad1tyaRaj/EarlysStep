@@ -81,81 +81,82 @@ rel="stylesheet"
         <h2>Others</h2>
             <!--Cards  -->
 
+
             <div class="card-container">
                         <!-- Card 1 -->
-
+{% for card in cards %}
               <div class="card">
               
-                  <img  src="https://images.unsplash.com/photo-1715706107718-4a0cc4f0335c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="Card Image 1" width="375px" height="250px">
-                  <h3>Card Title 1</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, praesentium accusantium temporibus .</p>
+                  <img  src="/Media/{{card.card_img}}" alt="Card Image 1" width="375px" height="250px">
+                  <h3>{{card.card_title}}</h3>
+                  <p>{{card.card_discription}}</p>
                   <a href= "#"><button>Read More</button></a>
               </div>
-  
+
                       <!--Card 2 -->
   
-              <div class="card">
-                <img src="https://images.unsplash.com/photo-1716343168811-353d613d132a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
-                    <h3 >Card Title 2</h3>
-                    <p>Card description or content goes here.</p>
-                    <a href= "#"><button>Read More</button></a>
-            </div>
-            
-                     <!-- card 3 -->
+<!--              <div class="card">-->
+<!--                <img src="https://images.unsplash.com/photo-1716343168811-353d613d132a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">-->
+<!--                    <h3 >Card Title 2</h3>-->
+<!--                    <p>Card description or content goes here.</p>-->
+<!--                    <a href= "#"><button>Read More</button></a>-->
+<!--            </div>-->
+<!--            -->
+<!--                     &lt;!&ndash; card 3 &ndash;&gt;-->
 
-            <div class="card">
-              <img src="https://images.unsplash.com/photo-1676548363806-d3a57b200082?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
-              <h3>Card Title 3</h3>
-                <p>Card description or content goes here.</p>
-                <a href= "#"><button>Read More</button></a>
-          </div>
+<!--            <div class="card">-->
+<!--              <img src="https://images.unsplash.com/photo-1676548363806-d3a57b200082?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">-->
+<!--              <h3>Card Title 3</h3>-->
+<!--                <p>Card description or content goes here.</p>-->
+<!--                <a href= "#"><button>Read More</button></a>-->
+<!--          </div>-->
 
-                   <!-- card 4 -->
+<!--                   &lt;!&ndash; card 4 &ndash;&gt;-->
 
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1715619044226-b693312ffb9b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
-                <h3>Card Title 4</h3>
-                <p>Card description or content goes here.</p>
-                <a href= "#"><button>Read More</button></a>
-        </div>
-      
-                    <!-- card 5 -->
+<!--          <div class="card">-->
+<!--            <img src="https://images.unsplash.com/photo-1715619044226-b693312ffb9b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">-->
+<!--                <h3>Card Title 4</h3>-->
+<!--                <p>Card description or content goes here.</p>-->
+<!--                <a href= "#"><button>Read More</button></a>-->
+<!--        </div>-->
+<!--      -->
+<!--                    &lt;!&ndash; card 5 &ndash;&gt;-->
 
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1716062778683-35d5f505d6ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
-              <h3>Card Title 5</h3>
-              <p>Card description or content goes here.</p>
-              <a href= "#"><button>Read More</button></a>
-      </div>
+<!--        <div class="card">-->
+<!--          <img src="https://images.unsplash.com/photo-1716062778683-35d5f505d6ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">-->
+<!--              <h3>Card Title 5</h3>-->
+<!--              <p>Card description or content goes here.</p>-->
+<!--              <a href= "#"><button>Read More</button></a>-->
+<!--      </div>-->
 
-                    <!-- card 6 -->
-  
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1716094978972-f05cb5796185?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">
-            <h3 class="card-title">Card Title 6</h3>
-            <p>Card description or content goes here.</p>
-            <a href= "#"><button>Read More</button></a>
-                    </div> 
+<!--                    &lt;!&ndash; card 6 &ndash;&gt;-->
+<!--  -->
+<!--      <div class="card">-->
+<!--        <img src="https://images.unsplash.com/photo-1716094978972-f05cb5796185?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D" alt="Card Image 2" width="375px" height="250px">-->
+<!--            <h3 class="card-title">Card Title 6</h3>-->
+<!--            <p>Card description or content goes here.</p>-->
+<!--            <a href= "#"><button>Read More</button></a>-->
+<!--                    </div> -->
 
-                    <!-- card 7 -->
+<!--                    &lt;!&ndash; card 7 &ndash;&gt;-->
 
-                    <div class="card">
-                      <img  src="https://images.unsplash.com/photo-1715706107718-4a0cc4f0335c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="Card Image 1" width="375px" height="250px">
-                      <h3>Card Title 7</h3>
-                      <p>Card description or content goes here.</p>
-                      <a href= "#"><button>Read More</button></a>
-                  </div>
+<!--                    <div class="card">-->
+<!--                      <img  src="https://images.unsplash.com/photo-1715706107718-4a0cc4f0335c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="Card Image 1" width="375px" height="250px">-->
+<!--                      <h3>Card Title 7</h3>-->
+<!--                      <p>Card description or content goes here.</p>-->
+<!--                      <a href= "#"><button>Read More</button></a>-->
+<!--                  </div>-->
 
-                    <!-- card 8 -->
+<!--                    &lt;!&ndash; card 8 &ndash;&gt;-->
 
 
-                    <div class="card">
-                      <img  src="https://images.unsplash.com/photo-1715706107718-4a0cc4f0335c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="Card Image 1" width="375px" height="250px">
-                      <h3>Card Title 8</h3>
-                      <p>Card description or content goes here.</p>
-                      <a href= "#"><button>Read More</button></a>
-                  </div>
-
+<!--                    <div class="card">-->
+<!--                      <img  src="https://images.unsplash.com/photo-1715706107718-4a0cc4f0335c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="Card Image 1" width="375px" height="250px">-->
+<!--                      <h3>Card Title 8</h3>-->
+<!--                      <p>Card description or content goes here.</p>-->
+<!--                      <a href= "#"><button>Read More</button></a>-->
+<!--                  </div>-->
+  {% endfor %}
             </div>
   
        </div>
