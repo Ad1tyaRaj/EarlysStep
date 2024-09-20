@@ -10,6 +10,7 @@ rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'menubar.css' %}">
 </head>
 
 <body>
@@ -26,6 +27,31 @@ rel="stylesheet"
                 </div> 
             </div>     
         </nav>
+
+
+                  <!-- mobile navbar -->
+
+        <div id="menubar">
+          <label>
+            <input type="checkbox" >
+              <div class = "toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+              </div>
+              <div class="slide">
+
+                  <ul>
+                      <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                      <li><a href="#"><i class="fas fa-phone"></i>Contact</a></li>
+                      <li><a href="#"><i class="fas fa-first-aid"></i>Services</a></li>
+                      <li id="toggleLoginFormBtn"><a href="login.html" ><i class="fas fa-user"></i>Login</a></li>
+                  </ul>
+              </div>
+          </label>
+
+
+         </div>
     </header>
 
     <div id="page1">
@@ -41,14 +67,14 @@ rel="stylesheet"
     </div>
 
     <div id="page2">
-      <h2>Suggested Steps :-</h2>
+      <h2>Suggested Steps</h2>
 
       <div class="swiper mySwiper">
           <div class="swiper-wrapper">
               {% for i in Data %}
             <div class="swiper-slide">
 
-             <a href="snake.html"><img src="/Media/{{i.stock_img}}" /></a>
+             <a href="{% static 'snake.html' %}"><img src="/Media/{{i.stock_img}}" /></a>
               <h1>{{i.title}}</h1>
 
             </div>

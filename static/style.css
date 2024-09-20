@@ -83,16 +83,15 @@ nav{
     display: flex;
     align-items: center;
     margin: 0 auto;
-    /* padding: 17vw; */
+    gap: 1.2vw;
 }
-.search-input {
+#nav-part2 input {
     width: 100%;
     padding: 10px;
     border: 1px solid #0000003c;
     border-radius: 50px;
     font-size: 18px;
     justify-content: space-between;
-    gap: 10vw;
 }
 .search-button {
     border: none;
@@ -103,10 +102,29 @@ nav{
     justify-content: space-between;
 }
 
+#mobnav{
+  height: 20vh;
+  /* padding: 2vw 2vw; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100%;
+}
+
+#ul{
+  display: flex;
+  align-items: center;
+  gap: 52vw;
+}
+
+
+
 
 /* ParallaxEffect---  */
 
-#page1{
+    #page1 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -140,29 +158,35 @@ nav{
     padding-top: 15px;
     padding-left: 15px;
     margin-bottom: 10px;
-    
+    text-align: center;
+
   }
   /* Swiper --- */
-  
-  
+
+
   .swiper {
     width: 100%;
     padding-top: 2em; /* changed to relative unit */
     padding-bottom: 2em; /* changed to relative unit */
   }
-  
+
   .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
     height: 300px;
   }
-  
+
   .swiper-slide img {
     display: block;
     width: 100%;
+    z-index: -1;
   }
-  
+  .verify-icon{
+    position: absolute;
+    left: .5em;
+    top: .5em;
+  }
   .swiper-slide h1 {
     display: block;
     text-align: center;
@@ -176,17 +200,18 @@ nav{
     width: 100%;
     background-color: #003329;
  }
+
  #OthersSec{
     width: 100%;
     padding-bottom: 50px;
-    
+
  }
  #OthersSec h2{
     padding-top: 70px;
     text-align: center;
     font-size: 3em;
     color: antiquewhite;
-    
+
 }
 
 
@@ -236,7 +261,7 @@ nav{
          max-width: 80vh;
          max-height: 35vh;
          align-items: center;
-         
+
     }
 
     .card:hover {
@@ -247,11 +272,11 @@ nav{
 /* Media queries for responsiveness */
 
 @media only screen and (min-width: 200px) and (max-width: 480px){
-  
+
     nav{
         display: none;
     }
-    #page1{ 
+    #page1{
         height: 50vw;
         width: 100%;
         overflow: hidden;
@@ -273,13 +298,13 @@ nav{
         font-size: 28px;
         font-weight: 900;
         text-align: center;
-        
+
     }
 
        .card-container{
         width: 375px;
        height: 100%;
-       
+
        }
        .card{
         flex-basis: 44%;
@@ -290,14 +315,14 @@ nav{
         max-width: 80%;
         max-height: 35%;
         align-items: center;
-        
+
    }
        .card p{
         font-size: 10px;
         font-weight: 600;
         line-height: 10px;
     }
-        
+
    }
 
 /* Tablet (max-width: 768px) */
@@ -305,6 +330,9 @@ nav{
     nav {
       margin-bottom: 50px;
       max-height: 5vh;
+    }
+    #menubar{
+      display: none;
     }
     #page1 {
       height: 50vw;
@@ -335,7 +363,10 @@ nav{
     nav {
       margin-bottom: 0;
       max-height: 10vh;
-      
+
+    }
+    #menubar{
+      display: none;
     }
     #page1 {
       height: 100vh;

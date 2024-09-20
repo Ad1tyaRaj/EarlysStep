@@ -10,4 +10,7 @@ def Home(request):
 
     return render(request,'Home/index.html',{'Data':data,'cards':card})
 
+def Remides_tamp(request):
+    return render(request,'static/snake.html')
+
 
