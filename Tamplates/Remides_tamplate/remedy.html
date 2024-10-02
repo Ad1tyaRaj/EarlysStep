@@ -1,64 +1,76 @@
 <!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="snake.css">
-    
+    <title>{{Step_Data.main_title}}</title>
+    <link rel="stylesheet" href="{% static 'snake.css' %}">
+
 </head>
 <body>
-     
+
   <div id="main">
+
     <div id="page1">
+
+
         <div id="top">
-                <h1>SNAKE BITE</h1>
+                <h1>{{Step_Data.main_title}}</h1>
         </div>
+
         <div id="title">
               <div id="image-verified">
-                <img src="Images\360_F_789863270_wts0sXU2W3V5LZ3CX0pwRQWmWlzrsj7y.jpg">
-                  
+                <img src="/Media/{{Step_Data.tamp_img}}">
+
               </div>
-              <p>A snake bite is a serious emergency that requires immediate medical attention. The venom can spread quickly, causing severe symptoms like swelling, pain, and potentially life-threatening reactions. It’s crucial to keep the person calm and still, clean and cover the bite, and seek professional help right away to manage the symptoms and administer antivenom. Avoid any actions that could worsen the situation, such as cutting the wound or applying ice.</p>
-              
+              <p>{{Step_Data.tamp_discription}}</p>
+
                  <h3>Instructions</h3>
         </div>
         </div>
+
         <div id="page2">
             <div id="container">
                 <div class="Step">
-                    <img src="https://www.douglashamp.com/wp-content/uploads/2022/03/image-30.png" alt="">
-                     <p><b>Do Not Panic:</b> Stay calm. Panicking can worsen the situation</p>
+                    <img src="/Media/{{Step_Data.step_img1}}" alt="">
+                     <p><b>{{Step_Data.step_title1}}:</b> {{Step_Data.step_discription1}}</p>
                 </div>
                 <div class="StepR">
-                    <p><b>Leave the Snake Alone:</b> Snakes usually bite when they feel threatened. Maintain a safe distance and wait for professional rescuers to arrive.</p>
-                <img src="https://www.douglashamp.com/wp-content/uploads/2022/03/image-30.png" alt="">
+                    <p><b>{{Step_Data.step_title2}}:</b>{{Step_Data.step_discription2}}</p>
+                <img src="/Media/{{Step_Data.step_img2}}"alt="">
                 </div>
                 <div class="Step">
-                    <img src="https://www.douglashamp.com/wp-content/uploads/2022/03/image-30.png" alt="">
-                    <p><b>Avoid Faith Healing: </b> Refrain from attempting any traditional or faith-based remedies.</p>
+                    <img src="/Media/{{Step_Data.step_img3}}" alt="">
+                    <p><b>{{Step_Data.step_title3}}:</b>{{Step_Data.step_discription3}}</p>
                 </div>
                 <div class="StepR">
-                    <p><b>Do Not Try to Kill or Capture the Snake: </b>Avoid any actions that might provoke the snake further.</p>
-                <img src="https://www.douglashamp.com/wp-content/uploads/2022/03/image-30.png" alt="">
+                    <p><b>{{Step_Data.step_title4}}:</b>{{Step_Data.step_discription4}}</p>
+                <img src="/Media/{{Step_Data.step_img4}}" alt="">
                 </div>
                 <div class="Step">
-                    <img src="https://www.douglashamp.com/wp-content/uploads/2022/03/image-30.png" alt="">
-                    <p><b>Do Not Cut or Suck the Bite Area: </b>These practices can cause additional harm.</p>
+                    <img src="/Media/{{Step_Data.step_img5}}" alt="">
+                    <p><b>{{Step_Data.step_title5}}:</b>{{Step_Data.step_discription5}}</p>
                 </div>
                 <div class="StepR">
-                    <p><b>Do Not Apply a Tourniquet: </b> Tying a tourniquet can worsen tissue damage.</p>
-                <img src="https://www.douglashamp.com/wp-content/uploads/2022/03/image-30.png" alt="">
+                    <p><b>{{Step_Data.step_title6}}:</b> {{Step_Data.step_discription6}}</p>
+                <img src="/Media/{{Step_Data.step_img6}}">
                 </div>
                 <div class="Step">
-                    <img src="https://www.douglashamp.com/wp-content/uploads/2022/03/image-30.png" alt="">
-                    <p><b>Do Not Apply Ice or Massage the Bitten Area: </b>These actions can exacerbate the venom's effects.</p>
+                    <img src="/Media/{{Step_Data.step_img7}}" alt="">
+                    <p><b>{{Step_Data.step_title7}}:</b> {{Step_Data.step_discription7}}</p>
                 </div>
                 <div class="StepR">
-                    <p><b>Do Not Self-Medicate or Apply Herbs/Spices: </b>Seek professional medical help instead</p>
-                <img src="https://www.douglashamp.com/wp-content/uploads/2022/03/image-30.png" alt="">
+                    <p><b>{{Step_Data.step_title8}}: </b>{{Step_Data.step_discription8}}</p>
+                <img src="/Media/{{Step_Data.step_img8}}" alt="">
                 </div>
+
             </div>
+
+
+
+
                <div id="rating-box">
 
                 <div class="rating">
@@ -82,22 +94,26 @@
                   <label for="star-5">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
                   </label>
+
                 </div>
 
                </div>
+
     </div>
+
+
     <div id="page3">
         <div id="feedback">
-   
+
             <div class="form-card1">
                 <div class="form-card2">
                   <form action ="mailto:27divyanshsingh.com"class="form">
                     <p class="form-heading">Your Feedback </p>
-              
+
                     <div class="form-field">
                       <input required="" placeholder="Name" class="input-field" type="text" />
                     </div>
-              
+
                     <div class="form-field">
                       <input
                         required=""
@@ -115,7 +131,7 @@
                         type="text"
                       />
                     </div>
-              
+
                     <div class="form-field">
                       <textarea
                         required=""
@@ -125,22 +141,20 @@
                         class="input-field"
                       ></textarea>
                     </div>
-                    
-                  
+
+
                     <button class="sendMessage-btn" >Send Message</button>
                   </form>
                 </div>
               </div>
-              
+
         </div>
     </div>
+
   </div>
-           
-
-               
-
 
 
 
 </body>
+
 </html>

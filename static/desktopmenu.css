@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+#desktop-menubar{
+    background-color: black;
+}
+
+
+.slide{
+  height: auto;
+  width: 20vh;
+  position: absolute;
+  background-color: #003329;
+  transition: 0.5s ease;
+  transform: translateX(-250px);
+ padding-bottom: 13px;
+ border-radius: 7px;
+
+}
+
+
+
+ul li{
+   list-style: none;
+   padding-top: 10px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 0;
+  display: block;
+  text-transform: capitalize;
+  transition: 0.2s ease-out;
+}
+
+ul li a:hover {
+  color: black;
+  box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+  border-radius:10px ;
+  background-color: #48cae4;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+ul li a i{
+  width: 40px;
+  text-align: center;
+}
+#desktop-menubar input{
+  display: none;
+  visibility: hidden;
+}
+
+.toggle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  top: 20px;
+  left: 15px;
+  cursor: pointer;
+
+}
+
+#desktop-menubar .toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    margin-right: 10px;
+}
+
+#desktop-menubar .toggle .top_line{
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#desktop-menubar .toggle .middle_line{
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#desktop-menubar .toggle .bottom_line{
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#desktop-menubar input:checked ~ .toggle .top_line{
+left: 2px;
+top: 14px;
+width: 25px;
+transform: rotate(45deg);
+}
+
+#desktop-menubar input:checked ~ .toggle .bottom_line{
+  left: 2px;
+  top: 14px;
+  width: 25px;
+  transform: rotate(-45deg);
+  }
+
+  #desktop-menubar  input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+    }
+
+    #desktop-menubar  input:checked ~ .slide{
+      transform: translateX(0);
+      box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+      margin-right: 10px;
+    }
+

@@ -35,3 +35,21 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
     },
   });
+
+
+
+  document.querySelector('.subscribe-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = this.querySelector('input[type="email"]').value;
+    alert(`Thank you for subscribing with email: ${email}`);
+    this.reset();
+});
+
+// document.querySelector('.search-bar').addEventListener('keypress', function(e) {
+//     if (e.key === 'Enter') {
+//         e.preventDefault();
+//         const searchTerm = this.value;
+//         alert(`Searching for: ${searchTerm}`);
+//         this.value = '';
+//     }
+// });

@@ -159,6 +159,7 @@ nav{
     padding-top: 15px;
     padding-left: 15px;
     margin-bottom: 10px;
+    text-align: center;
 
   }
   /* Swiper --- */
@@ -242,12 +243,15 @@ nav{
     }
     .card h3{
         padding: 10px 0px;
+        padding-bottom: 2px;
     }
     .card p{
         padding: 10px;
         font-size: clamp(0.5rem,0.3043rem + 3.4783vw, 1rem);
         font-weight: 500;
         text-align: center;
+        line-height:18px;
+
     }
     .card button{
        background-color: blue;
@@ -256,6 +260,7 @@ nav{
         color: white;
         border-radius:10px ;
        margin: 10px 0px;
+       margin-bottom: 5px ;
     }
     .card img{
          max-width: 80vh;

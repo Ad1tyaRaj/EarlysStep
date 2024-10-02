@@ -16,23 +16,15 @@
   height: auto;
   width: 20vh;
   position: absolute;
-  /* backface-visibility: hidden; */
   background-color: #003329;
   transition: 0.5s ease;
   transform: translateX(-250px);
  padding-bottom: 13px;
  border-radius: 7px;
+
 }
 
-h1{
-  color:  #e29578;
-  font-weight: 800;
-  text-align: right;
-  padding: 10px 0;
-  padding-right: 30px;
-  pointer-events: none;
-  
-}
+
 
 ul li{
    list-style: none;
@@ -124,9 +116,10 @@ input:checked ~ .toggle .bottom_line{
     opacity: 0;
     transform: translateX(20px);
     }
-  
+
     input:checked ~ .slide{
       transform: translateX(0);
       box-shadow: 0 0 15px rgba(0, 0, 0,0.5);
+
     } 
 
